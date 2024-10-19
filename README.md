@@ -2,7 +2,7 @@ Travel and Tour Website:
 
 Overview:
 
-Welcome to the Travel and Tour Website project, this web platform designed to provide users with a seamless experience while exploring travel destinations and booking tours. This website is built using HTML and CSS to showcase beautifully crafted pages with travel information, service offerings, and contact details.
+Welcome to the Travel and Tour Website project, this web platform is designed to provide users with a seamless experience while exploring travel destinations and booking tours. This website is built using HTML and CSS to showcase beautifully crafted pages with travel information, service offerings, and contact details.
 Whether you're a travel enthusiast looking for your next adventure or a travel agency seeking an online presence, this website provides the essential structure for showcasing destinations, services, and easy customer engagement.
 
 Features:
@@ -15,9 +15,10 @@ Pages Included
 Home Page: Introduction to the website with a welcoming message.
 About Us: Information about the travel agency, mission, and vision.
 Services: Overview of travel services provided.
-Contact Us: Section where users can find contact details.
+Contact Us: This section is where users can find contact details.
 
 Technologies Used:
 
 HTML5: For creating the structure and content of the web pages.
+
 CSS3: For styling the elements and ensuring a responsive layout.
