@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #f4f5fb;
 }
 
@@ -24,6 +24,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
+    box-shadow: 0.6rem 0 0.6rem;
 }
 
 #logo {
@@ -106,20 +107,31 @@ i.fa-magnifying-glass {
     opacity: 0.96;
 }
 
-#home h1{
+#home .main-heading-1 {
+    color: #f4f5fb;
+    font-size: 2.8rem;
     letter-spacing: 0.1rem;
+    padding: 0.6rem 3rem;
+}
+
+#home .main-heading-2 {
+    color: #f4f5fb;
+    font-size: 2.8rem;
+    padding: 0.3rem 3rem;
 }
 
 #home p {
     font-size: 1.2rem;
     color: #f4f5fb;
 }
-#home i.fa-arrow-down{
+
+#home i.fa-arrow-down {
     margin-left: 10px;
     font-size: 13px;
     font-weight: bold;
 }
-#home i.fa-sharp{
+
+#home i.fa-sharp {
     margin-right: 6px;
     padding: 6px 6px;
     background: #f4f5fb;
@@ -127,9 +139,11 @@ i.fa-magnifying-glass {
     border-radius: 6px;
     transition: 2s;
 }
-#home i.fa-sharp:hover{
+
+#home i.fa-sharp:hover {
     transform: translateY(-8px);
 }
+
 /* Home Section ends here */
 
 /* Services Section starts here */
@@ -140,32 +154,41 @@ i.fa-magnifying-glass {
 
 }
 
-#service-section .heading1 {
-    padding-top: 40px;
-}
-
 #services {
     display: flex;
-    margin: 0px 150px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2rem 0;
+    gap: 2rem;
 }
 
 #service-section .box {
     margin-top: 20px;
-    margin: 25px;
-    padding: 10px;
-    width: 230px;
+    padding: 30px 20px;
+    width: 16rem;
     background: #19025e;
+    border: none;
     outline: none;
     border-radius: 7px;
+    box-shadow: 0 0 0.8rem;
+    transition: transform 0.4s ease-in-out;
+}
+
+#service-section .box:hover {
+    transform: scale(1.1);
 }
 
 #service-section .box i {
     text-align: center;
     font-size: 40px;
     display: block;
-    padding: 12px 15px;
+    padding: 8px 15px;
     color: #f4f5fb;
+}
+
+#service-section .box h2 {
+    padding-top: 0.9rem;
 }
 
 #service-section .box a {
@@ -179,7 +202,7 @@ i.fa-magnifying-glass {
 
 #service-section .box p {
     color: #f4f5fb;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 /* Services Section Ends here */
@@ -192,11 +215,11 @@ i.fa-magnifying-glass {
     background: #1c0a51;
     grid-gap: 1rem;
     position: relative;
+    padding: 2rem 4rem;
 }
 
 #about-us .img {
-    width: 20px;
-    margin: 33px;
+    width: 100%;
 }
 
 #about-us .about {
@@ -232,15 +255,13 @@ i.fa-magnifying-glass {
     position: relative;
     margin-top: 0px;
     background: #1c0a51;
-    height: 400px;
-    padding: 20px;
+    padding: 2rem 0 0 0;
 }
 
 #gallery-section h3 {
-    margin: 0px 50px;
+    margin: 0px 5.7rem;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    padding-top: 40px;
     color: #f4f5fb;
 }
 
@@ -251,17 +272,23 @@ i.fa-magnifying-glass {
 
 #gallery {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
 }
 
 #gallery .gallery-box {
-    width: 172px;
-    margin: 40px 40px;
-    transition: 0.4s;
+    margin-top: 4rem;
+    width: 13rem;
+    transition: transform 0.4s ease;
     cursor: pointer;
 }
 
 #gallery .gallery-box img {
-    width: 170px;
+    width: 100%;
 }
 
 #gallery .gallery-box:hover {
@@ -276,28 +303,25 @@ i.fa-magnifying-glass {
     background: #1c0a51;
 }
 
-#packages-section h1 {
-    padding-top: 60px;
-}
-
 #packages {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
-    padding: 0px 80px;
+    gap: 1.5rem;
 }
 
 #packages-section .packages-box {
-    width: 265px;
-    border: 3px solid #f4f5fb;
+    width: 17rem;
     border-radius: 5px;
     background: #f4f5fb;
-    margin: 5px 10px;
-    margin-bottom: 3px;
+    box-shadow: 0 0 0.8rem;
+    padding: 1rem 0;
 }
 
 #packages-section .packages-box img {
-    width: 240px;
+    width: 15.5rem;
     margin: 9px auto;
     display: block;
     border-radius: 3px;
@@ -305,9 +329,9 @@ i.fa-magnifying-glass {
 }
 
 #packages-section .packages-box h2 {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 26px;
-    padding-left: 15px;
+    padding-left: 17px;
     color: black;
     cursor: pointer;
 }
@@ -318,12 +342,12 @@ i.fa-magnifying-glass {
 }
 
 #packages-section .packages-box p {
-    padding-left: 15px;
+    padding-left: 20px;
     margin-top: 4px;
 }
 
 #packages-section .rating {
-    padding-left: 15px;
+    padding-left: 20px;
     color: orange;
     margin-top: 9px;
 }
@@ -331,13 +355,13 @@ i.fa-magnifying-glass {
 #packages-section .packages-box h5 {
     font-size: 18px;
     margin-top: 9px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 #packages-section .packages-box button {
     padding: 3px 13px;
     border-radius: 6px;
-    margin-left: 15px;
+    margin-left: 18px;
     color: #1c0a51;
     background: #f4f5fb;
     border: 2px solid #1c0a51;
@@ -360,19 +384,16 @@ i.fa-magnifying-glass {
     background: #1c0a51;
 }
 
-.book-section .book-img {
-    margin-top: 100px;
-}
-
 .book-section img {
-    width: 450px;
+    width: 29.38rem;
     display: block;
     margin: auto;
     cursor: pointer;
+    margin-top: 6rem;
 }
 
 .book-section .book {
-    margin-top: 100px;
+    margin-top: 6rem;
 }
 
 .book-section h5 {
@@ -384,44 +405,30 @@ i.fa-magnifying-glass {
     margin-top: 5px;
 }
 
-.book-section form input[type="text"] {
+.book-section form input, .book-section form textarea {
     width: 60%;
     margin: 3px;
-    padding: 7px 10px;
+    padding: 16px 20px;
     border-radius: 8px;
+    outline: none;
+    border: none;
 }
 
-.book-section form input[type="date"] {
-    width: 60%;
-    margin: 3px;
-    padding: 7px 10px;
-    border-radius: 8px;
-}
-
-.book-section form input[type="placeholder"] {
-    font-weight: 100;
-}
-
-.book-section form textarea {
-    margin: 3px;
-    padding: 7px 10px;
-    border-radius: 8px;
-    width: 60%;
-}
-
-.book-section form input[type="submit"] {
+.book-section form button {
     width: 15%;
     display: block;
     margin: 3px;
-    padding: 9px 10px;
+    padding: 11px 10px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
     color: #1c0a51;
+    outline: none;
+    border: none;
 }
 
-.book-section form input:hover[type="submit"] {
+.book-section form button:hover {
     width: 19%;
 }
 
@@ -440,13 +447,13 @@ i.fa-magnifying-glass {
     font-size: 1.9rem;
 }
 
-#review-section{
+#review-section {
     display: flex;
     margin-top: 30px;
     padding: 0px 90px;
 }
 
-#review-section .review-box{
+#review-section .review-box {
     width: 350px;
     background: #f4f5fb;
     color: black;
@@ -455,25 +462,30 @@ i.fa-magnifying-glass {
     border: 2px solid black;
     margin: 0px 8px;
 }
-#review-section .review-box img{
+
+#review-section .review-box img {
     border-radius: 50%;
     width: 60px;
     margin: 15px 20px;
 }
-#review-section .review-box h5{
+
+#review-section .review-box h5 {
     margin-left: 75px;
     margin-top: -26px;
     font-size: 1.1rem;
     font-weight: bold;
 }
+
 #review-section .review-rating {
     margin-left: 20px;
 }
-#review-section .review-box i{
+
+#review-section .review-box i {
     color: orange;
     margin-top: 20px;
 }
-#review-section .review-box p{
+
+#review-section .review-box p {
     margin: 10px 20px;
     text-wrap: wrap;
 }
@@ -579,89 +591,103 @@ i.fa-magnifying-glass {
 
 /* Footer Section starts here */
 
-.footer-section{
+.footer-section {
     background: #1c0a51;
     border-top: 1px solid #f4f5fb;
 }
-.footer-section .footer-content{
+
+.footer-section .footer-content {
     display: flex;
     padding: 0px 60px;
     padding-bottom: 10px;
 }
-.footer-content .row{
+
+.footer-content .row {
     width: 100%;
     margin: 0px 4px;
     margin-top: 75px;
     padding: 0px 3px;
 }
-.footer-content #row-1 a{
+
+.footer-content #row-1 a {
     font-size: 1.5rem;
     font-weight: bold;
     color: #f4f5fb;
     letter-spacing: 1px;
 }
-.footer-content #row-1 p{
+
+.footer-content #row-1 p {
     margin-top: 10px;
     font-weight: 500;
     color: #f4f5fb;
     padding: 0px 3px;
 }
 
-.footer-content #row-1 i{
+.footer-content #row-1 i {
     margin-top: 10px;
     border: 2px solid #f4f5fb;
     padding: 0px 4px;
     font-weight: bold;
 }
-.footer-content #row-1 i[class="fa-brands fa-twitter"]{
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.footer-content #row-1 i[class="fa-brands fa-facebook-f"]{
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.footer-content #row-1 i[class="fa-brands fa-instagram"]{
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.footer-content #row-1 i[class="fa-brands fa-youtube"]{
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.footer-content #row-1 i[class="fa-brands fa-pinterest-p"]{
+
+.footer-content #row-1 i[class="fa-brands fa-twitter"] {
     padding: 5px;
     background: #f4f5fb;
     border-radius: 3px;
     cursor: pointer;
 }
 
-.footer-content h3{
+.footer-content #row-1 i[class="fa-brands fa-facebook-f"] {
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-instagram"] {
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-youtube"] {
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content #row-1 i[class="fa-brands fa-pinterest-p"] {
+    padding: 5px;
+    background: #f4f5fb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-content h3 {
     font-weight: bold;
     color: #f4f5fb;
     letter-spacing: 1px;
 }
-.footer-content ul{
+
+.footer-content ul {
     margin-top: 14px;
 }
-.footer-content li{
+
+.footer-content li {
     list-style: none;
 }
-.footer-content li a{
+
+.footer-content li a {
     color: #f4f5fb;
 }
-.footer-content li a:hover{
+
+.footer-content li a:hover {
     text-decoration: underline;
 }
-.footer-content .row img{
+
+.footer-content .row img {
     width: 190px;
     margin: auto;
     display: block;
@@ -675,7 +701,7 @@ i.fa-magnifying-glass {
 .h-primary {
     color: #f4f5fb;
     font-size: 2.8rem;
-    padding: 3px 15px;
+    padding: 4rem 2rem;
 }
 
 .h-secondary {
@@ -688,7 +714,7 @@ i.fa-magnifying-glass {
 
 .btn {
     padding: 6px 13px;
-    margin: 14px 12px;
+    margin: 14px 0;
     border: 2px solid #f4f5fb;
     border-radius: 10px;
     background: #1c0a51;
