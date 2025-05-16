@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 html {
@@ -38,7 +42,6 @@ body {
 
 #navbar ul {
     display: flex;
-    font-family: 'Josefin Sans', sans-serif;
     margin-left: -90px;
 }
 
@@ -160,13 +163,13 @@ i.fa-magnifying-glass {
     justify-content: center;
     align-items: center;
     padding: 0 0 2rem 0;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 #service-section .box {
     margin-top: 20px;
     padding: 30px 20px;
-    width: 16rem;
+    width: 16.8rem;
     background: #19025e;
     border: none;
     outline: none;
@@ -215,7 +218,7 @@ i.fa-magnifying-glass {
     background: #1c0a51;
     grid-gap: 1rem;
     position: relative;
-    padding: 2rem 4rem;
+    padding: 4rem 5rem;
 }
 
 #about-us .img {
@@ -223,20 +226,19 @@ i.fa-magnifying-glass {
 }
 
 #about-us .about {
-    margin: 100px 20px;
+    padding-left: 2rem;
     align-items: center;
-    justify-content: center;
     color: #f4f5fb;
 }
 
 #about-us .about h5 {
-    margin-bottom: 13px;
-    font-size: 1.1rem;
+    font-size: 2.2rem;
 }
 
 #about-us .about h3 {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #about-us .about button {
@@ -359,7 +361,7 @@ i.fa-magnifying-glass {
 }
 
 #packages-section .packages-box button {
-    padding: 3px 13px;
+    padding: 6px 13px;
     border-radius: 6px;
     margin-left: 18px;
     color: #1c0a51;
@@ -371,6 +373,7 @@ i.fa-magnifying-glass {
     color: #f4f5fb;
     background: #1c0a51;
     border: 2px solid #f4f5fb;
+    transition: all 0.4s ease;
 }
 
 /* Packages Section ends here */
@@ -380,44 +383,67 @@ i.fa-magnifying-glass {
 .book-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
     background: #1c0a51;
+    padding: 0 6rem;
 }
 
 .book-section img {
-    width: 29.38rem;
+    width: 30rem;
     display: block;
-    margin: auto;
     cursor: pointer;
     margin-top: 6rem;
 }
 
 .book-section .book {
-    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-left: 3rem;
 }
 
 .book-section h5 {
     color: #f4f5fb;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .book-section form {
-    margin-top: 5px;
+    padding-top: 2rem;
 }
 
-.book-section form input, .book-section form textarea {
-    width: 60%;
-    margin: 3px;
+.book-section form input {
+    width: 100%;
+    margin: 3px 0;
     padding: 16px 20px;
     border-radius: 8px;
     outline: none;
     border: none;
+    color: #555;
+    font-size: 0.93rem;
+}
+
+.book-section form textarea {
+    font-size: 0.93rem;
+    width: 100%;
+    margin: 3px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #555;
+}
+
+.book-section form input:focus {
+    border: 0.12rem solid #ff0000;
+    outline: none;
+}
+
+.book-section form textarea:focus {
+    border: 0.12rem solid #ff0000;
+    outline: none;
 }
 
 .book-section form button {
-    width: 15%;
+    width: 20%;
     display: block;
-    margin: 3px;
+    margin: 3px 0;
     padding: 11px 10px;
     border-radius: 8px;
     font-weight: bold;
@@ -426,10 +452,11 @@ i.fa-magnifying-glass {
     color: #1c0a51;
     outline: none;
     border: none;
+    font-size: 0.9rem;
 }
 
 .book-section form button:hover {
-    width: 19%;
+    width: 25%;
 }
 
 /* Book Section ends here */
@@ -438,56 +465,63 @@ i.fa-magnifying-glass {
 
 .review-section {
     background: #1c0a51;
+    padding-top: 6rem;
 }
 
-.review-section h1 {
+.review-section h2 {
     color: #f4f5fb;
-    padding-top: 100px;
     padding-left: 95px;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
 }
 
 #review-section {
     display: flex;
-    margin-top: 30px;
-    padding: 0px 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+    padding: 3rem 4rem 2rem 4rem;
 }
 
 #review-section .review-box {
-    width: 350px;
+    width: 23rem;
     background: #f4f5fb;
-    color: black;
+    color: #000000;
+    border: none;
+    outline: none;
     border-radius: 15px;
     cursor: pointer;
-    border: 2px solid black;
-    margin: 0px 8px;
+    padding: 2rem;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease-in-out;
+}
+
+#review-section .review-box:hover {
+    transform: scale(1.1);
 }
 
 #review-section .review-box img {
     border-radius: 50%;
-    width: 60px;
-    margin: 15px 20px;
+    width: 70px;
 }
 
 #review-section .review-box h5 {
-    margin-left: 75px;
-    margin-top: -26px;
     font-size: 1.1rem;
     font-weight: bold;
+    padding-top: 0.7rem;
 }
 
 #review-section .review-rating {
-    margin-left: 20px;
+    padding-top: 0.7rem;
 }
 
 #review-section .review-box i {
     color: orange;
-    margin-top: 20px;
 }
 
 #review-section .review-box p {
-    margin: 10px 20px;
     text-wrap: wrap;
+    padding-top: 0.7rem;
 }
 
 /* Review Section ends here */
@@ -497,31 +531,32 @@ i.fa-magnifying-glass {
 .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
     background: #1c0a51;
-    padding-bottom: 35px;
+    grid-gap: 1rem;
+    position: relative;
+    padding: 2rem 6rem;
 }
 
 .contact-section .contact-txt {
-    margin-top: 150px;
-    padding: 0px 100px;
+    padding: 6rem 2rem 0 0;
 }
 
 .contact-section h2 {
     color: #f4f5fb;
-    margin-top: 12px;
+    padding-top: 1rem;
+    font-size: 2.2rem;
 }
 
 .contact-section p {
     color: #f4f5fb;
-    margin-top: 12px;
+    padding-top: 1.2rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 .contact-section h5 {
     color: #f4f5fb;
-    margin-top: 10px;
+    padding-top: 1.2rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -529,62 +564,68 @@ i.fa-magnifying-glass {
 
 .contact-section h6 {
     color: #f4f5fb;
-    margin-top: 9px;
+    padding-top: 0.6rem;
     font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 .contact-section .contact {
-    margin-top: 100px;
+    padding-top: 6rem;
+    padding-left: 3rem;
 }
 
 .contact-section form {
-    margin-top: 5px;
+    padding-top: 2rem;
 }
 
-.contact-section form input[type="text"] {
-    width: 70%;
-    margin: 3px;
-    padding: 7px 10px;
-    border-radius: 8px;
-}
-
-.contact-section form input[type="number"] {
-    width: 70%;
-    margin: 3px;
-    padding: 7px 10px;
-    border-radius: 8px;
-}
-
-.contact-section form input[type="email"] {
-    width: 70%;
-    margin: 3px;
-    padding: 7px 10px;
-    border-radius: 8px;
-}
-
+.contact-section form input,
 .contact-section form textarea {
-    margin: 3px;
-    padding: 7px 10px;
+    width: 100%;
+    margin: 3px 0;
+    padding: 16px 20px;
     border-radius: 8px;
-    width: 70%;
+    outline: none;
+    border: none;
+    color: #555;
+    font-size: 0.93rem;
 }
 
-.contact-section form input[type="submit"] {
-    width: 15%;
+.contact-section form input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.contact-section form input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.contact-section form input:focus {
+    border: 0.12rem solid #ff0000;
+    outline: none;
+}
+
+.contact-section form textarea:focus {
+    border: 0.12rem solid #ff0000;
+    outline: none;
+}
+
+.contact-section form button {
+    width: 20%;
     display: block;
-    margin: 3px;
-    padding: 9px 10px;
+    margin: 3px 0;
+    padding: 11px 10px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
     color: #1c0a51;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
 }
 
-.contact-section form input:hover[type="submit"] {
-    width: 19%;
+.contact-section form button:hover {
+    width: 25%;
 }
 
 /* Contact Section ends here */
@@ -598,15 +639,40 @@ i.fa-magnifying-glass {
 
 .footer-section .footer-content {
     display: flex;
-    padding: 0px 60px;
-    padding-bottom: 10px;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 3rem;
+    /* gap: 1.2rem; */
+}
+
+.footer-content .footer-first-section{
+    width: 22rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* padding: 0 3rem 0 0rem; */
+}
+
+.footer-content .footer-other-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    /* width: 47rem; */
 }
 
 .footer-content .row {
     width: 100%;
-    margin: 0px 4px;
-    margin-top: 75px;
-    padding: 0px 3px;
+}
+
+.footer-content #row-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.2rem;
 }
 
 .footer-content #row-1 a {
@@ -617,62 +683,78 @@ i.fa-magnifying-glass {
 }
 
 .footer-content #row-1 p {
-    margin-top: 10px;
     font-weight: 500;
     color: #f4f5fb;
-    padding: 0px 3px;
 }
 
-.footer-content #row-1 i {
-    margin-top: 10px;
-    border: 2px solid #f4f5fb;
-    padding: 0px 4px;
-    font-weight: bold;
+.footer-content #row-1 .social-media-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.footer-content #row-1 i[class="fa-brands fa-twitter"] {
-    padding: 5px;
+.social-media-icons .icons{
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 0.1rem solid #fff;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 50%;
+    align-content: center;
     background: #f4f5fb;
-    border-radius: 3px;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
-.footer-content #row-1 i[class="fa-brands fa-facebook-f"] {
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
+.social-media-icons .icons:hover{
+    background-color: #1c0a51;
 }
 
-.footer-content #row-1 i[class="fa-brands fa-instagram"] {
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
+.social-media-icons i{
+    font-size: 1.2rem;
+    color: #1c0a51;
 }
 
-.footer-content #row-1 i[class="fa-brands fa-youtube"] {
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
+.social-media-icons .icons:hover > i{
+    color: #f4f5fb
 }
 
-.footer-content #row-1 i[class="fa-brands fa-pinterest-p"] {
-    padding: 5px;
-    background: #f4f5fb;
-    border-radius: 3px;
-    cursor: pointer;
+.footer-content #row-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
 }
 
+.footer-content #row-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.footer-content #row-3 .upper-row-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .footer-content h3 {
     font-weight: bold;
     color: #f4f5fb;
     letter-spacing: 1px;
 }
 
+.footer-content .row-line{
+    width: 14rem;
+    height: 0.1rem;
+    background-color: #f4f5fb;
+}
+
 .footer-content ul {
-    margin-top: 14px;
+    /* margin-top: 14px; */
 }
 
 .footer-content li {
@@ -685,6 +767,14 @@ i.fa-magnifying-glass {
 
 .footer-content li a:hover {
     text-decoration: underline;
+}
+
+.footer-content #row-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
 }
 
 .footer-content .row img {

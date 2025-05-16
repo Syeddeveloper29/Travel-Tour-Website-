@@ -15,13 +15,9 @@
 
     <!-- Font Awesome cdn Starts here -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- Google fonts starts here -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Title starts here -->
 
@@ -301,12 +297,13 @@
         </div>
         <div class="book">
             <h5 class="book-heading">Book Your Destination</h5>
-            <form action="noaction.php">
-                <input type="text" placeholder="Where To">
-                <input type="text" placeholder="How Many">
-                <input type="date" placeholder="dd/mm/yyyy">
-                <input type="date" placeholder="dd/mm/yyyy">
-                <textarea name="" id="" cols="5" rows="10" placeholder="Enter Your Name And Details Here"></textarea>
+            <form action="#">
+                <input type="text" placeholder="Where To" spellcheck="true">
+                <input type="text" placeholder="How Many" spellcheck="true">
+                <input type="date" placeholder="dd/mm/yyyy" spellcheck="true">
+                <input type="date" placeholder="dd/mm/yyyy" spellcheck="true">
+                <textarea name="" id="" cols="2" rows="6" placeholder="Enter Your Names & Details"
+                    spellcheck="true"></textarea>
                 <button type="submit" value="Book Now" class="submit" required>Book Now</button>
             </form>
         </div>
@@ -318,7 +315,7 @@
 
     <section class="review-section" id="reviews">
 
-        <h1 class="review-heading">What Customer Says</h1>
+        <h2 class="review-heading">What Customer Says</h2>
 
         <div id="review-section">
 
@@ -393,12 +390,12 @@
             <h6 class="contact-city">Karachi Sindh Pakistan</h6>
         </div>
         <div class="contact">
-            <form action="noaction.php">
-                <input type="text" placeholder="Name" required>
-                <input type="number" placeholder="Phone number" required>
-                <input type="email" placeholder="Email" required>
-                <textarea name="" id="" cols="5" rows="10" placeholder="Message"></textarea>
-                <input type="submit" value="Send" class="submit" required>
+            <form action="#">
+                <input type="text" placeholder="Name" spellcheck="true">
+                <input type="number" placeholder="Phone number" spellcheck="true">
+                <input type="email" placeholder="Email" spellcheck="true">
+                <textarea name="" id="" cols="2" rows="6" placeholder="Message" spellcheck="true"></textarea>
+                <button type="submit" value="Send" class="submit">Send</button>
             </form>
         </div>
     </section>
@@ -409,44 +406,49 @@
 
     <footer class="footer-section" id="footer">
         <div class="footer-content">
-            <div class="row" id="row-1">
-                <a href="#" id="footer-logo">Travel Agency</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt totam ducimus quidem
-                    Assumenda nesciunt totam ducimus quidem asperiores harum!</p>
-                <div class="socialmedia-icons">
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-pinterest-p"></i>
+            <div class="footer-first-section">
+                <div class="row" id="row-1">
+                    <a href="index.html" id="footer-logo">Travel Agency</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt totam ducimus quidem
+                        Assumenda nesciunt totam ducimus quidem asperiores harum!</p>
+                    <div class="social-media-icons">
+                        <div class="icons" title="twitter"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="icons" title="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icons" title="instagram"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icons" title="youtube"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="icons" title="pintrest"><i class="fa-brands fa-pinterest-p"></i></div>
+                    </div>
                 </div>
             </div>
-            <div class="row" id="row-2">
-                <h3>Useful Links</h3>
-                <hr>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#packages">Packages</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#book">Book</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="row" id="row-3">
-                <h3>Other Links</h3>
-                <hr>
-                <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">App Design</a></li>
-                    <li><a href="#">Game Design</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="row" id="row-4">
-                <h3>Download App</h3>
-                <hr>
-                <img src="images/app.png" alt="">
+
+            <div class="footer-other-sections">
+                <div class="row" id="row-2">
+                    <h3>Useful Links</h3>
+                    <div class="row-line"></div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#book">Book</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="row" id="row-3">
+                    <h3>Other Links</h3>
+                    <div class="row-line"></div>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">App Design</a></li>
+                        <li><a href="#">Game Design</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="row" id="row-4">
+                    <h3>Download App</h3>
+                    <div class="row-line"></div>
+                    <img src="images/app.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
