@@ -8,6 +8,7 @@
     <!-- CSS starts here -->
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
 
     <!-- Favicon starts here  -->
 
@@ -30,21 +31,29 @@
     <!-- Header start here -->
 
     <nav id="navbar">
-        <div id="logo">
-            <a href="#"><img src="images/logo.png" alt="Best Travel And Tour Website" </a>
+        <div class="upper-navbar-part">
+            <div id="logo">
+                <a href="#"><img src="images/logo.png" alt="Best Travel And Tour Website" </a>
+            </div>
         </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#packages">Packages</a></li>
-            <li><a href="#book">Book</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-        <div id="search-bar">
-            <input type="search" placeholder="Search here" required>
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="lower-navbar-part">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#book">Book</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" required>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
     <!-- Header ends here -->
@@ -52,11 +61,13 @@
     <!-- Home Section Starts here -->
 
     <section id="home">
-        <h1 class="main-heading-1">Travel The World</h1>
-        <h1 class="main-heading-2">& Explore The New Destination</h1><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae dolor sit amet vel minima?</p>
-        <a href="#gallery-section"><button class="btn">Our Gallery<i class="fa-solid fa-arrow-down"></i></button><i
-                class="fa-sharp fa-solid fa-circle-play"></i></a>
+        <h1 class="main-heading-1">Travel The World &</h1>
+        <h1 class="main-heading-2">Explore The New Destination</h1><br>
+        <p>Discover breathtaking places, unforgettable adventures, and cultures that inspire your soul.</p>
+        <a href="#gallery-section"><button class="btn gallery-btn">Our Gallery<i class="fa-solid fa-arrow-down"></i>
+            </button>
+            <i class="fa-sharp fa-solid fa-circle-play"></i>
+        </a>
     </section>
 
     <!-- Home Section Ends here -->
@@ -71,26 +82,26 @@
             <div class="box">
                 <i class="fas fa-globe-asia"></i>
                 <h2 class="h-secondary center"><a href="#">Arround The World</a></h2>
-                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora esse quae
-                    deleniti commodi accusamus.</p>
+                <p class="center">Explore breathtaking destinations across the globe with our planned tours that bring
+                    every journey to life</p>
             </div>
             <div class="box">
                 <i class="fas fa-plane"></i>
                 <h2 class="h-secondary center"><a href="#">Fastest Travel</a></h2>
-                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora esse quae
-                    deleniti commodi accusamus.</p>
+                <p class="center">Reach your favorite destinations quickly & comfortably with travel options and
+                    seamless bookings</p>
             </div>
             <div class="box">
                 <i class="fas fa-hotel"></i>
                 <h2 class="h-secondary center"><a href="#">Affordable Hotels</a></h2>
-                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora esse quae
-                    deleniti commodi accusamus.</p>
+                <p class="center">Enjoy cozy, budget-friendly hotel stays that give you great value without compromising
+                    comfort or location</p>
             </div>
             <div class="box">
                 <i class="fas fa-bullhorn"></i>
                 <h2 class="h-secondary center"><a href="#">Safety Guide</a></h2>
-                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora esse quae
-                    deleniti commodi accusamus.</p>
+                <p class="center">Stay safe and prepared during your trip with expert travel tips, local advice, and
+                    24/7 support from our team</p>
             </div>
         </div>
     </section>
@@ -106,12 +117,13 @@
         <div class="about">
             <h5 class="small">About Us</h5>
             <h3 class="big">How Work This Travel Agency</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ratione maiores quia soluta porro quas
-                dignissimos
-                vitae pariatur eos ad consequatur in, at voluptatibus nesciunt quam.Natus explicabo doloremnisi laborum
-                quisquam iste ducimus architecto consequatur ipsum officia fugiat, ex culpa.
-                Sunt eosrepellat iure perspiciatis, veritatis voluptate assumenda! Omnis hic est assumenda autem ut
-                dicta,facilis aperiam repellendus sapiente.</p><br><br>
+            <p>We are a passionate travel agency dedicated to creating unforgettable journeys that are safe, affordable,
+                and exciting. We begin by understanding your travel preferences and goals, then our team suggests the
+                best destinations, plans your routes, and finds the perfect stays. Once everything is approved, we
+                handle all bookings and prepare a complete itinerary. You’ll receive full travel details along with 24/7
+                support during your trip. From planning to the final destination, we make your travel smooth, enjoyable,
+                and stress-free</p>
+            <br>
             <a href="#"><button class="btn">Read More...</button></a>
         </div>
     </section>
@@ -155,7 +167,7 @@
                 <a href="#">
                     <h2 class="h-secondary">United States</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Skyscrapers Road Trips Cities</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -172,7 +184,7 @@
                 <a href="#">
                     <h2 class="h-secondary">Jordan</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Deserts Petra History Culture</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -189,7 +201,7 @@
                 <a href="#">
                     <h2 class="h-secondary">China</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Great Wall Temples Cuisine</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -206,7 +218,7 @@
                 <a href="#">
                     <h2 class="h-secondary">Mexico</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Beaches Tacos Pyramids</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -223,7 +235,7 @@
                 <a href="#">
                     <h2 class="h-secondary">France</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Eiffel Romance Fashion</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -240,7 +252,7 @@
                 <a href="#">
                     <h2 class="h-secondary">Greece</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Islands Sunsets Blue Seas</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -257,7 +269,7 @@
                 <a href="#">
                     <h2 class="h-secondary">Spain</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Beaches Festivals Architecture</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -274,7 +286,7 @@
                 <a href="#">
                     <h2 class="h-secondary">Turkey</h2>
                 </a>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Mosques Bazaars Coastline</p>
                 <div class="rating">
                     <i class="fa-solid fa-star checked"></i>
                     <i class="fa-solid fa-star checked"></i>
@@ -323,7 +335,7 @@
 
                 <img src="images/pic-1.png" alt="">
 
-                <h5 class="small-review">Elon Musk</h5>
+                <h5 class="small-review">David Jones</h5>
 
                 <div class="review-rating">
 
@@ -334,14 +346,14 @@
                     <i class="fa-solid fa-star checked"></i>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione, deserunt exercitationem eos
-                    temporibus aperiam eaque Earum ratione.</p>
+                <p>Amazing service from start to finish. My trip was perfectly organized and completely stress-free.
+                    I’ll definitely book again with this travel agency</p>
             </div>
             <div class="review-box">
 
                 <img src="images/pic-2.png" alt="">
 
-                <h5 class="small-review">Angelina Joulie</h5>
+                <h5 class="small-review">Angelina Williams</h5>
 
                 <div class="review-rating">
 
@@ -352,14 +364,14 @@
                     <i class="fa-solid fa-star checked"></i>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione, deserunt exercitationem
-                    eos temporibus aperiam eaque Earum ratione.</p>
+                <p>I loved every moment of my vacation! The team was so professional, and everything went just as
+                    promised. Truly a wonderful experience</p>
             </div>
             <div class="review-box">
 
                 <img src="images/pic-3.png" alt="">
 
-                <h5 class="small-review">Mark Zuckerberg</h5>
+                <h5 class="small-review">Ben Philips</h5>
 
                 <div class="review-rating">
 
@@ -370,8 +382,8 @@
                     <i class="fa-solid fa-star checked"></i>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione, deserunt
-                    exercitationem eos temporibus aperiam eaque Earum ratione.</p>
+                <p>I had a great experience with this agency. They helped me find the perfect destination and took care
+                    of all the details. Highly recommended!</p>
             </div>
         </div>
     </section>
@@ -383,8 +395,8 @@
     <section class="contact-section" id="contact">
         <div class="contact-txt">
             <h2 class="contact-heading">Get In Touch</h2>
-            <p class="contact-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illo delectus
-                voluptatem amet, iure qui rem quod dolorem voluptate? Lorem ipsum dolor</p>
+            <p class="contact-para">If you have any questions or need help planning your next trip, we're here for you.
+                Our team is ready to assist with anything you need, just reach out and let's get started!</p>
             <h5 class="contact-number">+920123456789</h5>
             <h6 class="contact-email">travelandtours@gmail.com</h6>
             <h6 class="contact-city">Karachi Sindh Pakistan</h6>
@@ -409,8 +421,9 @@
             <div class="footer-first-section">
                 <div class="row" id="row-1">
                     <a href="index.html" id="footer-logo">Travel Agency</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt totam ducimus quidem
-                        Assumenda nesciunt totam ducimus quidem asperiores harum!</p>
+                    <p>Travel Agency is your trusted partner for unforgettable journeys. We offer personalized travel
+                        experiences, expert guidance & support to make trips smooth & memorable. Discover the world with
+                        comfort & confidence.</p>
                     <div class="social-media-icons">
                         <div class="icons" title="twitter"><i class="fa-brands fa-x-twitter"></i></div>
                         <div class="icons" title="facebook"><i class="fa-brands fa-facebook-f"></i></div>
@@ -454,6 +467,8 @@
     </footer>
 
     <!-- Footer Section Ends here -->
+
+    <script src="function.js" defer></script>
 </body>
 
 </html>
