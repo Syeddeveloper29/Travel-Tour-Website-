@@ -1,23 +1,38 @@
+@media only screen and (max-width: 1450px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+
 /* Navigation bar starts here */
-@media only screen and (max-width: 1198px){
-    #navbar{
+@media only screen and (max-width: 1198px) {
+    #navbar {
         flex-direction: column;
         align-items: start;
-        height: 29.5rem;
+        height: 100%;
+        max-height: 4.6rem;
         justify-content: start;
-        gap: 0;
+        overflow: hidden;
+        gap: 2rem;
+        transition: max-height 0.4s linear;
+    }
+
+    #navbar.responsive {
+        max-height: 34rem;
     }
 
     #navbar .upper-navbar-part {
         align-items: start;
         justify-content: center;
         padding-left: 3rem;
-        padding-top: 1rem;
+        padding-top: 0.6rem;
     }
 
-    #navbar .lower-navbar-part{
+    #navbar .lower-navbar-part {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         align-items: start;
         padding-left: 3rem;
     }
@@ -26,33 +41,29 @@
         flex-direction: column;
         align-items: start;
         justify-content: start;
-        gap: 1.2rem;
-    }
-
-    #navbar ul li:hover{
-        padding: 0rem 1rem;
+        gap: 2rem;
     }
 
     #navbar ul li a {
-    color: #f4f5fb;
-    border-radius: 0.4rem;
-    padding: 0rem 0rem;
-}
+        padding: 0.7rem 2rem 0.7rem 0.7rem;
+    }
 
-    #navbar .search-bar{
+    #navbar .search-bar {
         justify-content: start;
         align-items: start;
         padding-top: 1.2rem;
+        padding-left: 0.7rem;
     }
 
-    .search-bar input{
+    .search-bar input {
         display: none;
     }
 
-    #navbar .hamburger{
+    #navbar .hamburger {
         display: block;
     }
 }
+
 /* Navigation bar starts here */
 
 
@@ -75,6 +86,13 @@
 
 
 /* About us section starts here */
+@media only screen and (max-width: 1270px) {
+    #about-us {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
 /* About us section starts here */
 
 
@@ -98,6 +116,12 @@
 
 
 /* Book section starts here */
+@media only screen and (max-width: 1178px) {
+    .book-section {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Book section starts here */
 
 
