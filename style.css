@@ -268,7 +268,9 @@ body {
 }
 
 #about-us .img {
-    width: 33rem;
+    max-width: 33rem;
+    min-width: 17.5rem;
+    width: 100%
 }
 
 #about-us .img img {
@@ -307,7 +309,7 @@ body {
 }
 
 #gallery-section h3 {
-    margin: 0px 5.7rem;
+    padding: 0 5rem;
     font-size: 1.5rem;
     letter-spacing: 2px;
     color: #f4f5fb;
@@ -433,11 +435,17 @@ body {
     padding: 0 4rem;
 }
 
-.book-section img {
-    width: 30rem;
+.book-section .book-img {
+    max-width: 33rem;
+    min-height: 17.5rem;
+    width: 100%;
     display: block;
     cursor: pointer;
     margin-top: 6rem;
+}
+
+.book-img img{
+    width: 100%;
 }
 
 .book-section .book {
@@ -458,7 +466,9 @@ body {
 }
 
 .book-section form input {
-    width: 33rem;
+    max-width: 33rem;
+    min-width: 18.5rem;
+    width: 100%;
     padding: 16px 20px;
     border-radius: 8px;
     outline: none;
@@ -530,7 +540,9 @@ body {
 }
 
 #review-section .review-box {
-    width: 22.7rem;
+    max-width: 22.7rem;
+    min-width: 18.5rem;
+    width: 100%;
     background: #f4f5fb;
     color: #000000;
     border: none;
@@ -821,7 +833,7 @@ body {
     gap: 1rem;
 }
 
-.footer-content .row img {
+.footer-content .apps-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -830,6 +842,9 @@ body {
     cursor: pointer;
 }
 
+.apps-img img{
+    width: 100%;
+}
 /* Footer Section ends here */
 
 /* Utility Classes starts here */
